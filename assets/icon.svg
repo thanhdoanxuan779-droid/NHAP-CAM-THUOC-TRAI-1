@@ -1,25 +1,34 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
   <title id="title">Bao cám CP924</title>
-  <desc id="desc">Biểu tượng bao cám CP924 màu xanh lá</desc>
+  <desc id="desc">Bao cám CP924 màu vàng xanh với hạt lúa</desc>
   <defs>
-    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#12482f"/>
-      <stop offset="1" stop-color="#31835b"/>
-    </linearGradient>
-    <linearGradient id="sack" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#fffef8"/>
-      <stop offset="1" stop-color="#dcebdd"/>
-    </linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0d452d"/><stop offset="1" stop-color="#3b9862"/></linearGradient>
+    <linearGradient id="bag" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f8d85b"/><stop offset=".52" stop-color="#eeb83c"/><stop offset="1" stop-color="#c98525"/></linearGradient>
+    <linearGradient id="label" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#23744a"/><stop offset="1" stop-color="#10482f"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="13" stdDeviation="12" flood-color="#052a1b" flood-opacity=".38"/></filter>
   </defs>
-  <rect width="512" height="512" rx="112" fill="url(#background)"/>
-  <circle cx="256" cy="256" r="194" fill="#fff" opacity=".08"/>
-  <path d="M76 177 165 126h182l89 51-22 270H98L76 177Z" fill="url(#sack)" stroke="#c5dfc9" stroke-width="10"/>
-  <path d="m76 177 165 54 165-54" fill="none" stroke="#b1d1b6" stroke-width="10"/>
-  <path d="M175 129c7-32 24-49 43-49s36 17 43 49" fill="none" stroke="#eff9ef" stroke-width="17" stroke-linecap="round"/>
-  <rect x="113" y="262" width="299" height="105" rx="18" fill="#18583c"/>
-  <text x="263" y="333" text-anchor="middle" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="72" font-weight="900" letter-spacing="2">CP924</text>
-  <path d="M155 402h216" stroke="#7cae85" stroke-width="10" stroke-linecap="round"/>
-  <circle cx="174" cy="424" r="7" fill="#18583c"/><circle cx="205" cy="424" r="7" fill="#18583c"/><circle cx="337" cy="424" r="7" fill="#18583c"/><circle cx="368" cy="424" r="7" fill="#18583c"/>
-  <circle cx="408" cy="104" r="31" fill="#e5effb"/>
-  <path d="M408 87v34M391 104h34" stroke="#2868a5" stroke-width="9" stroke-linecap="round"/>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <circle cx="256" cy="250" r="199" fill="#fff" opacity=".07"/>
+  <g filter="url(#shadow)">
+    <path d="M91 143 144 112h224l53 31-19 316H110L91 143Z" fill="url(#bag)" stroke="#f9e58a" stroke-width="7"/>
+    <path d="M91 143h330M108 163h296" stroke="#a86c24" stroke-width="8" opacity=".8"/>
+    <path d="M145 113c14-27 30-40 54-40h114c24 0 40 13 54 40" fill="none" stroke="#ffe987" stroke-width="14" stroke-linecap="round"/>
+    <path d="M130 190 116 425M382 190l14 235" stroke="#b77725" stroke-width="8" opacity=".48"/>
+    <path d="M153 192h206" stroke="#fff0a1" stroke-width="5" opacity=".7"/>
+    <rect x="119" y="211" width="274" height="151" rx="23" fill="url(#label)" stroke="#8fd071" stroke-width="6"/>
+    <path d="M140 236h232M140 337h232" stroke="#a9df72" stroke-width="4" opacity=".7"/>
+    <text x="256" y="303" text-anchor="middle" fill="#fff5b3" font-family="Arial,Helvetica,sans-serif" font-size="71" font-weight="900" letter-spacing="1">CP924</text>
+    <text x="256" y="258" text-anchor="middle" fill="#d8f19b" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" letter-spacing="4">THỨC ĂN GIA CẦM</text>
+    <text x="256" y="330" text-anchor="middle" fill="#d8f19b" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700" letter-spacing="3">GÀ BỐ MẸ</text>
+    <!-- grain icon -->
+    <path d="M256 388c-2-29 4-49 18-67M255 377c-17-11-27-25-31-42M266 356c17-8 27-19 32-34" fill="none" stroke="#fff0a1" stroke-width="6" stroke-linecap="round"/>
+    <ellipse cx="238" cy="350" rx="9" ry="16" transform="rotate(-42 238 350)" fill="#fff0a1"/>
+    <ellipse cx="249" cy="330" rx="9" ry="16" transform="rotate(-38 249 330)" fill="#fff0a1"/>
+    <ellipse cx="277" cy="337" rx="9" ry="16" transform="rotate(42 277 337)" fill="#fff0a1"/>
+    <ellipse cx="287" cy="319" rx="9" ry="16" transform="rotate(42 287 319)" fill="#fff0a1"/>
+    <!-- stitching -->
+    <path d="M126 414h260" stroke="#ffe987" stroke-width="6" stroke-dasharray="9 8" stroke-linecap="round"/>
+  </g>
+  <circle cx="411" cy="96" r="31" fill="#e5effb"/>
+  <path d="M411 79v34M394 96h34" stroke="#2868a5" stroke-width="9" stroke-linecap="round"/>
 </svg>
