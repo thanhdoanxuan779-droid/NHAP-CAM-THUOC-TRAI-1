@@ -1,23 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
-  <title id="title">Sổ nhập cám và thuốc</title>
-  <desc id="desc">Biểu tượng túi cám kết hợp viên thuốc</desc>
+  <title id="title">Cám và thuốc</title>
+  <desc id="desc">Bao cám màu xanh lá và viên thuốc màu xanh dương</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#18583c"/>
-      <stop offset="1" stop-color="#2b7b55"/>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#154d35"/>
+      <stop offset="1" stop-color="#2f865c"/>
     </linearGradient>
-    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#fffdf7"/>
-      <stop offset="1" stop-color="#e7f1e8"/>
+    <linearGradient id="sack" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffef8"/>
+      <stop offset="1" stop-color="#dcebdd"/>
     </linearGradient>
   </defs>
-  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
-  <path d="M118 166 256 112l138 54v222c0 18-14 32-32 32H150c-18 0-32-14-32-32V166Z" fill="url(#paper)" stroke="#d1e3d5" stroke-width="10"/>
-  <path d="m118 166 138 54 138-54" fill="none" stroke="#c0d7c5" stroke-width="10"/>
-  <path d="M206 142c8-36 27-54 50-54s42 18 50 54" fill="none" stroke="#f5fbf4" stroke-width="18" stroke-linecap="round"/>
-  <path d="M164 280h112M164 320h72" stroke="#18583c" stroke-width="18" stroke-linecap="round"/>
-  <circle cx="347" cy="316" r="64" fill="#fff" stroke="#2868a5" stroke-width="10"/>
-  <path d="M347 278v76M309 316h76" stroke="#2868a5" stroke-width="18" stroke-linecap="round"/>
-  <circle cx="414" cy="108" r="26" fill="#e5effb" opacity=".95"/>
-  <path d="M402 108h24M414 96v24" stroke="#2868a5" stroke-width="7" stroke-linecap="round"/>
+  <rect width="512" height="512" rx="112" fill="url(#background)"/>
+  <circle cx="256" cy="256" r="193" fill="#ffffff" opacity=".08"/>
+  <!-- feed sack -->
+  <path d="M73 186 164 135h106l91 51-20 244H93L73 186Z" fill="url(#sack)" stroke="#c8dfcb" stroke-width="10"/>
+  <path d="m73 186 144 49 144-49" fill="none" stroke="#b4d2b8" stroke-width="10"/>
+  <path d="M174 138c7-31 24-48 43-48s36 17 43 48" fill="none" stroke="#eff9ef" stroke-width="17" stroke-linecap="round"/>
+  <path d="M125 293c27-35 54-35 81 0 27-35 54-35 81 0" fill="none" stroke="#18583c" stroke-width="13" stroke-linecap="round"/>
+  <circle cx="206" cy="334" r="8" fill="#18583c"/><circle cx="239" cy="350" r="8" fill="#18583c"/><circle cx="272" cy="334" r="8" fill="#18583c"/>
+  <!-- medicine capsule -->
+  <g transform="rotate(-35 363 305)">
+    <rect x="307" y="244" width="126" height="126" rx="63" fill="#f7fbff" stroke="#2868a5" stroke-width="11"/>
+    <path d="M370 247v120" stroke="#2868a5" stroke-width="11"/>
+    <path d="M307 307h63v63h-1a62 62 0 0 1-62-62v-1Z" fill="#4f9cda"/>
+  </g>
+  <circle cx="405" cy="116" r="31" fill="#e5effb"/>
+  <path d="M405 99v34M388 116h34" stroke="#2868a5" stroke-width="9" stroke-linecap="round"/>
 </svg>
