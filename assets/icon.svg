@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Sổ nhập cám và thuốc</title>
+  <desc id="desc">Biểu tượng túi cám kết hợp viên thuốc</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#18583c"/>
+      <stop offset="1" stop-color="#2b7b55"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffdf7"/>
+      <stop offset="1" stop-color="#e7f1e8"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <path d="M118 166 256 112l138 54v222c0 18-14 32-32 32H150c-18 0-32-14-32-32V166Z" fill="url(#paper)" stroke="#d1e3d5" stroke-width="10"/>
+  <path d="m118 166 138 54 138-54" fill="none" stroke="#c0d7c5" stroke-width="10"/>
+  <path d="M206 142c8-36 27-54 50-54s42 18 50 54" fill="none" stroke="#f5fbf4" stroke-width="18" stroke-linecap="round"/>
+  <path d="M164 280h112M164 320h72" stroke="#18583c" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="347" cy="316" r="64" fill="#fff" stroke="#2868a5" stroke-width="10"/>
+  <path d="M347 278v76M309 316h76" stroke="#2868a5" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="414" cy="108" r="26" fill="#e5effb" opacity=".95"/>
+  <path d="M402 108h24M414 96v24" stroke="#2868a5" stroke-width="7" stroke-linecap="round"/>
+</svg>
