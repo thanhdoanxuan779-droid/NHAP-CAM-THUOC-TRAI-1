@@ -1,7 +1,7 @@
 <!doctype html>
-<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><meta name="theme-color" content="#f3f6f3"><title>Sổ nhập cám & thuốc</title><link rel="icon" href="assets/icon-512.png" type="image/png"><link rel="apple-touch-icon" href="assets/icon-512.png"><link rel="manifest" href="manifest.json"><script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><meta name="theme-color" content="#f3f6f3"><title>Sổ nhập cám & thuốc</title><script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
 <style>
-:root{--green:#18583c;--green-line:#236747;--green-bg:#e3f2e8;--blue:#1d5e9e;--blue-line:#2868a5;--blue-bg:#e5effb;--ink:#29352f;--grid:#b8c8bf;--paper:#fff;--page:#f3f6f3}*{box-sizing:border-box}html,body{margin:0;width:100%;min-height:100%;overflow-x:hidden}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:var(--page);color:var(--ink);padding:0 0 calc(76px + env(safe-area-inset-bottom));-webkit-text-size-adjust:100%;touch-action:pan-y}.app-head{padding:18px 18px 14px;display:flex;align-items:center;gap:12px}.brand{flex:1;min-width:0}.brand h1{font-size:21px;line-height:1.15;margin:0;color:var(--green);font-weight:850;letter-spacing:-.5px}.brand p{margin:7px 0 0;color:#6c7b73;font-size:13px}.menu-btn{height:48px;width:48px;border:1px solid #cbd8d0;border-radius:15px;background:white;color:#294c3b;font-size:25px;line-height:1}
+:root{--green:#18583c;--green-line:#236747;--green-bg:#e3f2e8;--blue:#1d5e9e;--blue-line:#2868a5;--blue-bg:#e5effb;--ink:#29352f;--grid:#b8c8bf;--paper:#fff;--page:#f3f6f3}*{box-sizing:border-box}html,body{margin:0;width:100%;min-height:100%;overflow-x:hidden}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:var(--page);color:var(--ink);padding:0;-webkit-text-size-adjust:100%;touch-action:pan-y}.app-head{padding:18px 18px 14px;display:flex;align-items:center;gap:12px}.brand{flex:1;min-width:0}.brand h1{font-size:21px;line-height:1.15;margin:0;color:var(--green);font-weight:850;letter-spacing:-.5px}.brand p{margin:7px 0 0;color:#6c7b73;font-size:13px}.menu-btn{height:48px;width:48px;border:1px solid #cbd8d0;border-radius:15px;background:white;color:#294c3b;font-size:25px;line-height:1}
 .menu-panel {
   position: fixed;
   z-index: 30;
@@ -49,7 +49,7 @@
   text-align: center;
   padding-left: 2px;
   padding-right: 2px;
-}td input[type=date]{font-size:10px;padding:2px 0}td input[type=number]{appearance:textfield;-moz-appearance:textfield}td input[type=number]::-webkit-inner-spin-button{appearance:none}.med .sheet{--green-line:var(--blue-line)}.med .sheet-title{border-bottom-color:var(--blue-line)}.med th{border-color:var(--grid)}.hidden{display:none!important}.bottom-tabs{position:fixed;z-index:10;left:0;right:0;bottom:0;display:flex;gap:8px;padding:8px 12px calc(8px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);border-top:1px solid #d6dfd9}.bottom-tabs button{flex:1;border:1px solid #d4ded7;border-radius:12px;background:#e8eee9;padding:12px 5px;font-size:14px;font-weight:850;color:#45554b}.bottom-tabs button.active.feed{background:var(--green);border-color:var(--green);color:#fff}.bottom-tabs button.active.med{background:var(--blue);border-color:var(--blue);color:#fff}@media(min-width:700px){.app-head, .month-box,.tabs,main{max-width:900px;margin-left:auto;margin-right:auto}.app-head{padding-top:22px}.brand h1{font-size:26px}main{padding-left:14px;padding-right:14px}table{font-size:13px}th{font-size:12px}.sheet-title h2{font-size:30px}.sheet-title p{font-size:15px}.period{font-size:15px}td input,td select{font-size:13px}}@media print{.app-head,.month-box,.tabs,.bottom-tabs{display:none}body{padding:0;background:#fff}main{padding:0}.sheet{border-radius:0}table{font-size:10px}}
+}td input[type=date]{font-size:10px;padding:2px 0}td input[type=number]{appearance:textfield;-moz-appearance:textfield}td input[type=number]::-webkit-inner-spin-button{appearance:none}.med .sheet{--green-line:var(--blue-line)}.med .sheet-title{border-bottom-color:var(--blue-line)}.med th{border-color:var(--grid)}.hidden{display:none!important}@media(min-width:700px){.app-head, .month-box,.tabs,main{max-width:900px;margin-left:auto;margin-right:auto}.app-head{padding-top:22px}.brand h1{font-size:26px}main{padding-left:14px;padding-right:14px}table{font-size:13px}th{font-size:12px}.sheet-title h2{font-size:30px}.sheet-title p{font-size:15px}.period{font-size:15px}td input,td select{font-size:13px}}@media print{.app-head,.month-box,.tabs{display:none}body{padding:0;background:#fff}main{padding:0}.sheet{border-radius:0}table{font-size:10px}}
 .hidden{display:none!important}</style></head><body>
 <header class="app-head"><div class="brand"><h1>SỔ NHẬP CÁM &amp; THUỐC</h1><p>Theo dõi hàng nhập hằng ngày · Trại gà bố mẹ</p></div><button class="menu-btn" id="menuBtn" aria-label="Menu" title="Menu">☰</button></header>
 <div class="tabs"><button id="topFeed" class="tab active feed">Nhập cám</button><button id="topMed" class="tab">Nhập thuốc</button></div>
@@ -64,7 +64,7 @@
 </tr></thead><tbody id="medRows"></tbody></table></div></section>
 </main>
 <div id="menuPanel" class="menu-panel hidden" role="dialog" aria-modal="true" aria-label="Công cụ"><div class="menu-card"><h3 id="menuTitle">Công cụ nhập cám</h3><button id="saveCloudBtn">☁️ Lưu dữ liệu nhập cám lên máy chủ</button><button id="loadCloudBtn">↻ Tải dữ liệu nhập cám từ máy chủ</button><button id="exportPdfBtn">📄 Xuất PDF độ nét cao và chia sẻ</button><button id="closeMenuBtn" class="close-menu">Đóng</button></div></div><div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
-<nav class="bottom-tabs"><button id="bottomFeed" class="active feed">Nhập cám</button><button id="bottomMed">Nhập thuốc</button></nav>
+
 
 <script>
 (() => {
@@ -325,6 +325,10 @@
   async function startupSync() {
     loading = true;
     cloudReady = false;
+    const main = document.querySelector('main');
+    main.classList.add('busy');
+    main.inert = true;
+    main.setAttribute('aria-busy', 'true');
     let syncSucceeded = false;
 
     const localData = {
@@ -382,7 +386,7 @@
       }
 
       syncSucceeded = true;
-      notify('Đã đồng bộ dữ liệu với Cloudflare.');
+     
     } catch (e) {
       data = localData;
       render('feed');
@@ -392,6 +396,9 @@
     } finally {
       loading = false;
       cloudReady = syncSucceeded;
+      main.classList.remove('busy');
+      main.inert = false;
+      main.removeAttribute('aria-busy');
       updateMenuLabels();
     }
   }
@@ -473,7 +480,7 @@ const fieldHtml = kind === 'feed'
   tr.innerHTML = `
     <td class="stt-cell"><span class="stt-number"></span></td>
     <td class="date-cell">
-      <span class="date-display">${displayDate(dateValue)}</span>
+      <span class="date-display">${esc(displayDate(dateValue))}</span>
       <input type="date" data-date-input aria-label="Ngày nhập"
         value="${esc(dateValue)}">
     </td>
@@ -726,13 +733,13 @@ function updateFeedTotal() {
     $('feedSheet').classList.toggle('hidden', kind !== 'feed');
     $('medSheet').classList.toggle('hidden', kind !== 'med');
 
-    ['topFeed', 'bottomFeed'].forEach(id => {
+    ['topFeed'].forEach(id => {
       $(id).classList.toggle('active', kind === 'feed');
       $(id).classList.toggle('feed', kind === 'feed');
       $(id).classList.toggle('med', false);
     });
 
-    ['topMed', 'bottomMed'].forEach(id => {
+    ['topMed'].forEach(id => {
       $(id).classList.toggle('active', kind === 'med');
       $(id).classList.toggle('med', kind === 'med');
       $(id).classList.toggle('feed', false);
@@ -741,12 +748,8 @@ function updateFeedTotal() {
     updateMenuLabels();
   }
 
-  ['topFeed', 'bottomFeed'].forEach(id =>
-    $(id).onclick = () => switchTo('feed')
-  );
-  ['topMed', 'bottomMed'].forEach(id =>
-    $(id).onclick = () => switchTo('med')
-  );
+  $('topFeed').onclick = () => switchTo('feed');
+  $('topMed').onclick = () => switchTo('med');
 
   $('menuBtn').addEventListener('click', () => {
     updateMenuLabels();
